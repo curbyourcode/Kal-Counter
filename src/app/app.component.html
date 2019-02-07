@@ -1,11 +1,15 @@
 <app-toolbar></app-toolbar>
+<br />
+<br />
 <div class='basic-container'>
   <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="15px" class="main-div">
     <mat-card class="z-depth center" flex="50">
       <mat-card-content>
         <div class="container">
-          <app-meal-list [childMealList]="masterMealList" (cick)="showDetails($event)"></app-meal-list>
-          <app-edit-meal [childSelectedMeal]="selectedMeal" (doneClickedSender)="isFinishedEdit()"></app-edit-meal>
+          <app-meal-list [childMealList]="masterMealList" (clickSender)="showDetails($event)"></app-meal-list>
+          <br/>
+          <br />
+          <app-edit-meal [childSelectedMeal]="selectedMeal" (doneClickedSender)="finishedEditing()"></app-edit-meal>
           <app-add-meal (newMealSender)="addMeal($event)"></app-add-meal>
         </div>
       </mat-card-content>

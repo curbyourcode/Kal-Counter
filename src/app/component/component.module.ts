@@ -26,11 +26,12 @@ import {
   import { MatSelectModule } from '@angular/material/select';
   import { MatSliderModule } from '@angular/material/slider';
   import {MatDividerModule} from '@angular/material/divider';
-import { Alert } from 'selenium-webdriver';
+import { providerDef } from '@angular/core/src/view';
+  // import { Alert } from 'selenium-webdriver';
 
 @NgModule({
   imports: [
-    CommonModule,
+  CommonModule,
     MatDialogModule,
     MatTabsModule,
     MatDividerModule,
@@ -56,6 +57,7 @@ import { Alert } from 'selenium-webdriver';
     MatPaginatorModule
   ],
   exports: [
+    AlertComponent,
     MatTabsModule,
     MatDividerModule,
     MatSliderModule,
@@ -81,6 +83,6 @@ import { Alert } from 'selenium-webdriver';
     MatDividerModule
   ],
   declarations: [AlertComponent],
-  entryComponents: [AlertComponent]
+  entryComponents: [AlertComponent],
 })
 export class ComponentModule { }

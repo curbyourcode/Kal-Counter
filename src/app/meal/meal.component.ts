@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Meal } from '../meal.model';
 
 @Component({
@@ -6,13 +6,9 @@ import { Meal } from '../meal.model';
   templateUrl: './meal.component.html',
   styleUrls: ['./meal.component.scss']
 })
-export class MealComponent implements OnInit {
+export class MealComponent {
 
   @Input() meal: Meal;
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }
