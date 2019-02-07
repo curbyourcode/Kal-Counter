@@ -7,13 +7,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { EditMealComponent } from './edit-meal/edit-meal.component';
+import { AddMealComponent } from './add-meal/add-meal.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    EditMealComponent,
+    AddMealComponent
   ],
   imports: [
 BrowserModule,
