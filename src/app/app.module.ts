@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { AddMealComponent } from './add-meal/add-meal.component';
+import { MealComponent } from './meal/meal.component';
 
 
 
@@ -17,7 +18,8 @@ import { AddMealComponent } from './add-meal/add-meal.component';
     AppComponent,
     ToolbarComponent,
     EditMealComponent,
-    AddMealComponent
+    AddMealComponent,
+    MealComponent
   ],
   imports: [
 BrowserModule,
