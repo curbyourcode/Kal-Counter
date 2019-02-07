@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { Component, Output, EventEmitter} from '@angular/core';
 import { Meal } from '../meal.model';
 
 @Component({
@@ -6,21 +6,17 @@ import { Meal } from '../meal.model';
   templateUrl: './add-meal.component.html',
   styleUrls: ['./add-meal.component.scss']
 })
-export class AddMealComponent implements OnInit {
+export class AddMealComponent {
 
-  @Output() addMealSender = new EventEmitter();
+  @Output() newMealSender = new EventEmitter();
 
   addClicked (
     name: string,
     description: string,
     calories: number,
     ) {
-      const newMealToAdd: Meal = new Meal ( name, description, calories );
-      this.addMealSender.emit( newMealToAdd );
-    }
-
-    ngOnInit() {
-
+      const newMealToAdd: Meal = new Meal (name, description, calories );
+      this.newMealSender.emit(newMealToAdd );
     }
 
 }
