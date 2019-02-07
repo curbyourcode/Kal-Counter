@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalService } from './services/modal.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'kal-tracker';
+  constructor(private modalService: ModalService) {
+
+  }
+  openInfoModal() {
+    this.modalService.openInfoModal();
+  }
 }

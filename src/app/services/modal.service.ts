@@ -15,6 +15,9 @@ export class ModalService {
       width: '300px',
       data: ''
     });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('After Closed >>> ', result);
+    });
   }
   // opneWarningModal() {}
   // openErrorModal() {}
