@@ -4,9 +4,9 @@
     <mat-card class="z-depth center" flex="50">
       <mat-card-content>
         <div class="container">
-          <!-- <meal-list [childMealList]="masterMealList" (cick)="showDetails($event)"></meal-list>
-          <edit-meal [childSelectedMeal]="selectedMeal" (doneClickedSender)="finishedEditing()"></edit-meal>
-          <new-meal (newMealSender)="addMeal($event)"></new-meal>
+          <app-meal-list [childMealList]="masterMealList" (cick)="showDetails($event)"></app-meal-list>
+          <app-edit-meal [childSelectedMeal]="selectedMeal" (doneClickedSender)="isFinishedEdit()"></app-edit-meal>
+          <app-add-meal (newMealSender)="addMeal($event)"></app-add-meal>
         </div>
       </mat-card-content>
     </mat-card>
@@ -14,10 +14,9 @@
 </div>
 
 
-
-< <div>
+ <!-- <div>
   <div class="button-row">
     <button mat-raised-button (click)="openInfoModal()">Show Info Modal</button>
   </div>
-</div> -->
+</div>  -->
 

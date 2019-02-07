@@ -10,6 +10,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { AddMealComponent } from './add-meal/add-meal.component';
 import { MealComponent } from './meal/meal.component';
+import { MealListComponent } from './meal-list/meal-list.component';
+import { CompletenessPipe } from './completeness.pipe';
 
 
 
@@ -19,7 +21,9 @@ import { MealComponent } from './meal/meal.component';
     ToolbarComponent,
     EditMealComponent,
     AddMealComponent,
-    MealComponent
+    MealComponent,
+    MealListComponent,
+    CompletenessPipe
   ],
   imports: [
 BrowserModule,
