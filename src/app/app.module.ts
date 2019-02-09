@@ -16,6 +16,7 @@ import { CompletenessPipe } from './completeness.pipe';
 // import { ModalService } from '../.services/modal.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,7 @@ import { CompletenessPipe } from './completeness.pipe';
     AddMealComponent,
     MealComponent,
     MealListComponent,
-    CompletenessPipe
+    CompletenessPipe,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +34,7 @@ import { CompletenessPipe } from './completeness.pipe';
     FormsModule,
     ComponentModule,
     FlexLayoutModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

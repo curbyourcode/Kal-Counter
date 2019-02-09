@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter} from '@angular/core';
+import { Component, Output, Input, EventEmitter, } from '@angular/core';
 import { Meal } from '../meal.model';
 
 @Component({
@@ -8,7 +8,9 @@ import { Meal } from '../meal.model';
 })
 export class AddMealComponent {
 
-  @Output() newMealSender = new EventEmitter();
+  @Input() newMealSender = new EventEmitter();
+  @Input() childSelectedMeal: Meal;
+  @Output() doneClickedSender = new EventEmitter();
 
   addClicked (
     name: string,

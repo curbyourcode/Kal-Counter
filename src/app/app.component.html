@@ -1,26 +1,23 @@
 <app-toolbar></app-toolbar>
 <br />
 <br />
-<div class='basic-container'>
-  <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="15px" class="main-div">
-    <mat-card class="z-depth center" flex="50">
+    <mat-card class="example-card" layout="row" layout-align="center">
+      <mat-card-header>
+        <img mat-card-avatar class="example-header-image" src="assets/img/carrot_logo.jpeg">
+        <mat-card-title>placeholder name</mat-card-title>
+        <mat-card-subtitle>Your Meals</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets/img/food.jpg" alt="Photo of Carrol logo">
       <mat-card-content>
-        <div class="container">
+        <div >
           <app-meal-list [childMealList]="masterMealList" (clickSender)="showDetails($event)"></app-meal-list>
-          <br/>
-          <br />
+          <br>
           <app-edit-meal [childSelectedMeal]="selectedMeal" (doneClickedSender)="finishedEditing()"></app-edit-meal>
           <app-add-meal (newMealSender)="addMeal($event)"></app-add-meal>
         </div>
       </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
     </mat-card>
-  </div>
-</div>
-
-
- <!-- <div>
-  <div class="button-row">
-    <button mat-raised-button (click)="openInfoModal()">Show Info Modal</button>
-  </div>
-</div>  -->
-

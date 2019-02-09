@@ -1,28 +1,51 @@
-<mat-card>
-    <mat-card-content>
-      <div class="container">
-        <form>
-          <mat-card-title><strong><h2 >ADD MEAL</h2></strong></mat-card-title>
-
-
-          <div class="form-group" style="margin-left:auto; margin-right:0">
-            <input type="text" required="required" name="name" value="" #newName />
-            <label for="input" class="control-label">Name:</label><i class="bar"></i>
-          </div>
-
-          <div class="form-group">
-            <input type="text" required="required" name="name" value="" #newDescription>
-            <label for="input" class="control-label">Description:</label><i class="bar"></i>
-          </div>
-          <div class="form-group">
-            <input type="text" required="required"  name="name" value="" #newCalories/>
-            <label for="input" class="control-label">Calories:</label><i class="bar"></i>
-          </div>
-
-        </form>
-
-        <div class="button-container">
-          <button
+<mat-card >
+  <mat-card-content>
+    <div class="container" >
+      <form>
+        <mat-card-title><strong><h2>ADD MEAL</h2></strong></mat-card-title>
+        <div class="form-group" style="margin-left:auto; margin-right:0">
+          <input style="font-family: 'Poppins', sans-serif; font-size: 18px;"
+            type="text"
+            required="required"
+            name="name"
+            value=""
+            #newName />
+          <label style="font-family: 'Poppins', sans-serif; color:#666;
+            font-size:13px;"
+            for="input"
+            class="control-label">Name:
+          </label><i
+          class="bar"></i>
+        </div>
+        <div class="form-group" style="margin-left:auto; margin-right:0">
+          <input style="font-family: 'Poppins', sans-serif; font-size: 18px;"
+            type="text"
+            required="required"
+            name="name"
+            value=""
+            #newDescription>
+          <label style="font-family: 'Poppins', sans-serif; color:#666;
+            font-size:13px;"
+            for="input"
+            class="control-label">Description:
+          </label>
+          <i class="bar"></i>
+        </div>
+        <div class="form-group" style="margin-left:auto; margin-right:0">
+          <input style="font-family: 'Poppins', sans-serif; font-size: 18px;"
+            type="text"
+            required="required"
+            name="name" value=""
+            #newCalories/>
+          <label style="font-family: 'Poppins', sans-serif; color:#666;
+            font-size:13px;" for="input"
+            class="control-label">Calories:
+          </label><i
+          class="bar"></i>
+        </div>
+      </form>
+      <div class="button-container">
+        <button
           type="button"
           class="button"
           (click)="addClicked
@@ -30,8 +53,8 @@
           newName.value='';
           newDescription.value='';
           newCalories.value='';">
-          <span>Submit</span></button>
-        </div>
+          <span>SUBMIT</span></button>
       </div>
-    </mat-card-content>
-  </mat-card>
+    </div>
+  </mat-card-content>
+</mat-card>

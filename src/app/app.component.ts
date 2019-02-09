@@ -8,7 +8,7 @@ import { Meal } from './meal.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  selectedMeal: Meal = null;
+   selectedMeal: Meal = null;
 
   masterMealList: Meal[] = [
     new Meal('Apple-Cinnamon Quinoa Bowl', 'Grains, apples, cinnamin', 307),

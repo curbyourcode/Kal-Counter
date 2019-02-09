@@ -14,8 +14,14 @@ export class MealListComponent  {
   @Output() clickSender = new EventEmitter();
   selectedCompleteness = 'notDone';
 
+
   onChange(optionFromMenu) {
     this.selectedCompleteness = optionFromMenu;
+
+  }
+
+  addButtonHasBeenClicked(newMealFromChild: Meal) {
+    this.clickSender.emit(newMealFromChild);
 
   }
 
