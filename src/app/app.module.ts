@@ -14,10 +14,8 @@ import { MealComponent } from './meal/meal.component';
 import { MealListComponent } from './meal-list/meal-list.component';
 import { CompletenessPipe } from './completeness.pipe';
 import { FooterComponent } from './footer/footer.component';
+
 // import { ModalService } from '../.services/modal.service';
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
