@@ -13,6 +13,7 @@ import { AddMealComponent } from './add-meal/add-meal.component';
 import { MealComponent } from './meal/meal.component';
 import { MealListComponent } from './meal-list/meal-list.component';
 import { CompletenessPipe } from './completeness.pipe';
+import { FooterComponent } from './footer/footer.component';
 // import { ModalService } from '../.services/modal.service';
 
 
@@ -26,6 +27,7 @@ import { CompletenessPipe } from './completeness.pipe';
     MealComponent,
     MealListComponent,
     CompletenessPipe,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
