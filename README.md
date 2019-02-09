@@ -1,27 +1,24 @@
-# KalTracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
+# Meal-Tracker Angular 7
 
-## Development server
+####  Responsive application allows users to track meals and calorie intake
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+A remake of a project that I created with the release of Angular 2 in 2016. This version is done in Angular 7 with heavy focus on Angular Material. Users are able to log their daily meals, including details pertaning to thier meal. You may assume foods being logged are for a single day (you are not required to keep track of multiple days' meals).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup/Installation Requirements
 
-## Build
+* _Clone repository. Then locate top folder directory in command line_
+* Run `npm install` to install packages.
+* Run `bower ng serve` to start the server on port 4200.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Support and contact details
+www.rouzm.com
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
++ Angular 7, TypeScript, HTML5, SASS, Angular-CLI, Angular Material, Firebase
++ Node, npm
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
