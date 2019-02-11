@@ -8,9 +8,7 @@ import { Meal } from '../meal.model';
 })
 export class AddMealComponent {
 
-  @Input() newMealSender = new EventEmitter();
-  @Input() childSelectedMeal: Meal;
-  @Output() doneClickedSender = new EventEmitter();
+  @Output() newMealSender = new EventEmitter();
 
   addClicked (
     name: string,

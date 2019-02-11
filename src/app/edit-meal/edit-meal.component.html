@@ -1,48 +1,48 @@
-  <div class="container" *ngIf='childSelectedMeal'>
-      <mat-card-title><strong><h2>Edit Meal</h2></strong></mat-card-title>
-      <form>
-        <div
-        class="form-group"
-        style="margin-left:auto; margin-right:0">
-        <input
-          style="font-family: 'Poppins', sans-serif; font-size: 18px;"
-          [(ngModel)]='childSelectedMeal.name'
-          value=''
-          [ngModelOptions]='{standalone:true}'>
-        <label
-          style="font-family: 'Poppins', sans-serif; color:#666;
-          font-size:13px;" class="control-label">Enter meal:
-        </label><i class="bar"></i>
-      </div>
-      <div
-        class="form-group"
-        style="margin-left:auto; margin-right:0">
-        <input
-          style="font-family: 'Poppins', sans-serif; font-size: 18px;"
-          [(ngModel)]='childSelectedMeal.description'
-          value=''
-          [ngModelOptions]='{standalone:true}'>
-        <label
-          style="font-family: 'Poppins', sans-serif; color:#666;
-          font-size:13px;" class=control-label>Enter name:
-        </label>
-        <i class="bar"></i>
-      </div>
-      <div
-        class="form-group"
-        style="margin-left:auto; margin-right:0">
-        <input
-          style="font-family: 'Poppins', sans-serif; font-size: 18px;"
-          [(ngModel)]='childSelectedMeal.calories'
-          value=''
-          [ngModelOptions]='{standalone:true}'>
-        <label
-          style="font-family: 'Poppins', sans-serif; color:#666;
-          font-size:13px;" class="control-label">Enter calories:
-        </label>
-        <i class="bar"></i>
-      </div>
-      <button type="button" class="button" (click)='doneClicked()'><span>DONE</span></button>
-      </form>
-  </div>
-
+ <div class="container" *ngIf='childSelectedMeal'>
+  <mat-card-title><strong><h2>Edit Meal</h2></strong></mat-card-title>
+  <form>
+    <div
+      class="form-group"
+      style="margin-left:auto; margin-right:0">
+      <input
+        style="font-family: 'Poppins', sans-serif; font-size: 18px;"
+        [(ngModel)]='childSelectedMeal.name'
+        value=''
+        [ngModelOptions]='{standalone:true}'>
+      <label
+        style="font-family: 'Poppins', sans-serif; color:#666;
+        font-size:13px;" class="control-label">Enter meal:
+      </label><i class="bar"></i>
+    </div>
+    <div
+      class="form-group"
+      style="margin-left:auto; margin-right:0">
+      <input
+        style="font-family: 'Poppins', sans-serif; font-size: 18px;"
+        [(ngModel)]='childSelectedMeal.description'
+        value=''
+        [ngModelOptions]='{standalone:true}'>
+      <label
+        style="font-family: 'Poppins', sans-serif; color:#666;
+        font-size:13px;" class=control-label>Enter name:
+      </label>
+      <i class="bar"></i>
+    </div>
+    <div
+      class="form-group"
+      style="margin-left:auto; margin-right:0">
+      <input
+        style="font-family: 'Poppins', sans-serif; font-size: 18px;"
+        [(ngModel)]='childSelectedMeal.calories'
+        value=''
+        [ngModelOptions]='{standalone:true}'>
+      <label
+        style="font-family: 'Poppins', sans-serif; color:#666;
+        font-size:13px;" class="control-label">Enter calories:
+      </label>
+      <i class="bar"></i>
+    </div>
+    <button type="button" class="button" (click)='doneClicked()'><span
+        style="font-family: 'Poppins', sans-serif">DONE</span></button>
+  </form>
+</div>

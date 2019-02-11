@@ -1,136 +1,215 @@
-.ft-copyright {
-  background-color: #000a1f;
-  border-top: 1px solid #121d6d;
+$primary-light-blue: #8db9ed;
+$primary-line-color: #ccc;
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font: 11px "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
   display: flex;
+  flex-flow: column nowrap;
+  //This justify-content is essentially unnecessary in Firefox and Chrome due to the flex: 1 1 auto on the main.  However, it's needed to push the footer down on IE11
+  justify-content: space-between;
 }
-
-.pb-2,
-.py-2 {
-  padding-bottom: .5rem !important;
-  padding-top: .5rem !important;
+ul {
+  list-style: none;
 }
-
-.footer-top {
-  background-color: #012061;
-  border-bottom: 1px solid rgba(25, 52, 132, .64);
+a {
+  text-decoration: none;
 }
-
-.text-center {
-  text-align: center !important;
+.generic-anchor {
+  color: $primary-light-blue;
+  &:visited {
+    color: $primary-light-blue;
+  }
+  &:hover {
+    color: $primary-line-color;
+  }
 }
-
-h4.ft-text-title {
-  color: #fff;
-  margin: 20px 0 10px;
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: 'Poppins', sans-serif
-
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
 }
-
-h4 {
-  display: block;
-  -webkit-margin-before: 1.33em;
-  -webkit-margin-after: 1.33em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-h6.ft-desp {
-  color: #FFF;
-  padding: 2px;
-}
-
-h6 {
-  font-size: 15px;
-}
-h1 {
+//This main is mostly to push the footer to the bottom and for demo purposes.
+main {
+  flex: 1 1 auto; //For IE11
   display: flex;
   align-items: center;
   justify-content: center;
+  font: 10em "Oswald", sans-serif;
+  color: rgb(155, 155, 155);
+  line-height: 1;
 }
-h1.heading-title a{
-  color: #012061 !important;
-  text-decoration: none;
+footer {
+  background: rgb(55, 55, 55);
+  margin-top: auto;
+  width: 100%;
 }
-h1 {
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1.4;
-  color: #000;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  position: relative;
+.footer-list-top {
+  width: 33.333%;
+}
+.footer-list-top > li {
+  text-align: center;
   padding-bottom: 10px;
 }
-// a.contact,
-// a.mail {
-//   border: 1px solid yellow;
-//   border-bottom-right-radius: 15px;
-//   border-bottom-left-radius: 15px;
-//   color: #fff;
-//   padding: 5px;
-//   font-size: 15px;
-//   text-decoration: none;
-// }
-
-
-
-.border-left {
-  border-left: dotted #ddd 1px;
-}
-
-.pspt-dtls {
-  margin-top: 20px !important;
-}
-
-.pspt-dtls a {
-  margin: 8px !important;
-}
-
-a.about,
-a.team,
-a.advertise {
-  padding: 8px;
-  border: 1px yellow solid;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 5px;
-  color: #FFF;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-// a.about:hover,
-// a.team:hover,
-// a.advertise:hover {
-//   background: #900;
-// }
-
-footer p {
+.footer-list-header {
+  padding: 15px 0 20px 10px;
   color: #fff;
-  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 15px;
 }
-
-.text-pp-crt,
-.text-pp-crt-rg {
-  color: #FFFFFF;
+.footer-list-anchor {
+  font-family: "Poppins", sans-serif;
 }
-
-.developer {
-  text-align: center;
+.footer-social-section {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 5px;
 }
-  p.member{
-      color:#FFF;
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 1px solid $primary-line-color;
+  width: calc(100% - 20px);
+}
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: rgb(55, 55, 55);
+  padding: 0 20px;
+}
+.footer-social-connect {
+  display: flex;
+  align-items: center;
+  font: 1.7em "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.footer-social-small {
+  font-size: 0.6em;
+  padding: 0px 20px;
+}
+.footer-social-overlap > a {
+  font-size: 3em;
+}
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.38em;
+}
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid $primary-line-color;
+  margin-top: 10px;
+}
+.footer-bottom-section > div:first-child {
+  margin-right: auto;
+}
+.footer-bottom-wrapper {
+  font-size: 1.5em;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.footer-address {
+  display: inline;
+  font-style: normal;
+}
+@media only screen and (max-width: 768px) {
+  .footer-list-header {
+    font-size: 2em;
   }
-// i.develop {
-//   border: 1px red dotted;
-// }
-
-// .developer b {
-//   color: red;
-// }
+  .footer-list-anchor {
+    font-size: 1.1em;
+  }
+  .footer-social-connect {
+    font-size: 2.5em;
+  }
+  .footer-social-overlap > a {
+    font-size: 2.24em;
+  }
+  .footer-bottom-wrapper {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (max-width: 568px) {
+  main {
+    font-size: 5em;
+  }
+  .footer-list-top {
+    width: 100%;
+  }
+  .footer-list-header {
+    font-size: 3em;
+  }
+  .footer-list-anchor {
+    font-size: 1.5em;
+  }
+  .footer-social-section {
+    justify-content: center;
+  }
+  .footer-social-section::after {
+    top: 25%;
+  }
+  .footer-social-connect {
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  .footer-social-overlap {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social-icons-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 20px;
+  }
+  .footer-bottom-section {
+    padding: 0 5px 10px 5px;
+  }
+  .footer-bottom-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-social-overlap > a {
+    margin: auto;
+  }
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 0;
+  }
+  .footer-bottom-rights {
+    display: block;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .footer-list-header {
+    font-size: 2.2em;
+  }
+  .footer-list-anchor {
+    font-size: 1.2em;
+  }
+  .footer-social-connect {
+    font-size: 2.4em;
+  }
+  .footer-social-overlap > a {
+    font-size: 2.24em;
+  }
+  .footer-bottom-wrapper {
+    font-size: 1.3em;
+  }
+}
