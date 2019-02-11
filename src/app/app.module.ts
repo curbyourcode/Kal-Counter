@@ -15,7 +15,11 @@ import { MealListComponent } from './meal-list/meal-list.component';
 import { CompletenessPipe } from './completeness.pipe';
 import { FooterComponent } from './footer/footer.component';
 
-// import { ModalService } from '../.services/modal.service';
+import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
+import { FacebookLikeComponent} from './facebook-like/facebook-like.component';
+// import { SpinnerComponent } from './spinner/spinner.component';
+ import { SpinnerModule } from './spinner/spinner.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     MealListComponent,
     CompletenessPipe,
     FooterComponent,
+    FacebookLikeComponent,
+    // SpinnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +40,9 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     ComponentModule,
     FlexLayoutModule,
+    JwSocialButtonsModule,
+    SpinnerModule
+
 
   ],
   providers: [],

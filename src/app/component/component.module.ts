@@ -31,7 +31,7 @@ import { providerDef } from '@angular/core/src/view';
 
 @NgModule({
   imports: [
-  CommonModule,
+    CommonModule,
     MatDialogModule,
     MatTabsModule,
     MatDividerModule,
